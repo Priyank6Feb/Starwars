@@ -1,0 +1,76 @@
+html {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.opacity{
+    opacity:.8
+}
+.cardLayout{
+    padding: 3%;
+    margin : 3%;
+}
+header,main,footer {
+  width: 80vw;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+header h1 {
+  color:black;
+  text-align: center;
+}
+#nav,#footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 25%;
+}
+#nav a {
+  color:black;
+  padding: 0.25rem 1rem;
+  font-size: 15px;
+}
+#footer a {
+    color:black;
+    padding: 0.10rem 1rem;
+    font-size: 20px;
+  }
+span{
+    text-decoration:underline
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .overlay.active {
+    display: flex;
+    cursor: wait;
+  }
+  .loading {
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
